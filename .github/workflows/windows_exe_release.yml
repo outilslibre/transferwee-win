@@ -1,0 +1,25 @@
+name: Package transferwee with Pyinstaller
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  buildexe:
+    name: Build transferwee.exe
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Package transferwee
+      uses: JackMcKew/pyinstaller-action-windows@python3-10-pyinstaller-5-3
+      with:
+        path: .
+
+    - name: Release transferwee-win
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ./dist/windows/transferwee.exe
