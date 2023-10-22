@@ -1,4 +1,10 @@
-# transferwee
+# transferwee-win
+
+This repository provides a Windows compiled version of transferwee script by [@iamleot](https://github.com/iamleot/transferwee).
+
+You can download the latest release [here](https://github.com/outilslibre/transferwee-win/releases/latest).
+
+[![Package transferwee with Pyinstaller](https://github.com/outilslibre/transferwee-win/actions/workflows/windows_exe_release.yml/badge.svg)](https://github.com/outilslibre/transferwee-win/actions/workflows/windows_exe_release.yml)
 
 transferwee is a simple Python 3 script to download/upload files via
 [wetransfer.com](https://wetransfer.com/).
@@ -104,7 +110,3 @@ Hello world!
 % md5 hello
 MD5 (hello) = 59ca0efa9f5633cb0371bbc0355478d8
 ```
-
-## Dependencies
-
-transferwee needs [requests](http://python-requests.org/) package.
